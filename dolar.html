@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor</title>
+    <script src="pesos.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form name="formulario" method="post" autocomplete="off" class="formulario">
+    <h1>Convertir de pesos a dolares o viceversa</h1>
+
+    <p>
+        <label for="">Agrega el valor del dolar:</label>
+    <input class="cjt" type="number" id="d" value=""  placeholder="Ingresa el valor" onblur="dolar()" >
+    
+    </p>
+     <p>
+     <label for="">cantidad a convertir: </label>
+    <input class="cjt" type="number" id="p" value=""  placeholder="Ingresa el valor" onblur="cantidad()">
+     </p>
+   
+   
+    <input class="B" type="button" value=" dolares a Pesos" onclick="dolares()">
+    <input class="B" type="button" value=" pesos a Dolares" onclick="pesos()">
+    <input class="B" type="reset" value="Borar datos" onclick="borrar()">
+    <ul id='rst'></ul>
+    </form>
+
+</body>
+</html>
